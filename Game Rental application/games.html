@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Rentals</title>
+  <link rel="stylesheet" href="gam.css">
+  <script src="games.js" defer></script>
+</head>
+<body>
+  <!-- Header Section with Navigation -->
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1 id="home">Gamers Blog</h1>
+    <input type="text" id="searchBar" placeholder="Search games..." onkeyup="filterGames()" aria-label="Search for games">
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- PlayStation Games Section -->
+    <section aria-labelledby="ps-games-heading">
+      <h2 id="ps-games-heading">PlayStation Exclusive Games</h2>
+      <div class="carousel-container" id="ps-games">
+        <button class="scroll-btn left" onclick="scrollCarousel('ps-games', -1)" aria-label="Scroll left in PlayStation games">&#10094;</button>
+        <div class="carousel"></div>
+        <button class="scroll-btn right" onclick="scrollCarousel('ps-games', 1)" aria-label="Scroll right in PlayStation games">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Xbox Games Section -->
+    <section aria-labelledby="xbox-games-heading">
+      <h2 id="xbox-games-heading">Xbox Exclusive Games</h2>
+      <div class="carousel-container" id="xbox-games">
+        <button class="scroll-btn left" onclick="scrollCarousel('xbox-games', -1)" aria-label="Scroll left in Xbox games">&#10094;</button>
+        <div class="carousel"></div>
+        <button class="scroll-btn right" onclick="scrollCarousel('xbox-games', 1)" aria-label="Scroll right in Xbox games">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Popular Games Section -->
+    <section aria-labelledby="popular-games-heading">
+      <h2 id="popular-games-heading">Popular Games</h2>
+      <div class="carousel-container" id="popular-games">
+        <button class="scroll-btn left" onclick="scrollCarousel('popular-games', -1)" aria-label="Scroll left in popular games">&#10094;</button>
+        <div class="carousel"></div>
+        <button class="scroll-btn right" onclick="scrollCarousel('popular-games', 1)" aria-label="Scroll right in popular games">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Game Details -->
+  <div id="gameModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()" aria-label="Close game details">&times;</button>
+      <img id="modalImage" src="" alt="Game Image">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Game Rentals | All Rights Reserved</p>
+  </footer>
+
+  <!-- About Section -->
+  <section id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About Us</h2>
+    <p>Welcome to Gamers Blog, your one-stop destination for the latest games, reviews, and more.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact Us</h2>
+    <p>For inquiries, please email us at <a href="mailto:contact@gamersblog.com">contact@gamersblog.com</a>.</p>
+  </section>
+</body>
+</html>
