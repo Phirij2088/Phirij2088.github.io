@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Rentals</title>
+  <title>Gamers Blog</title>
   <link rel="stylesheet" href="gam.css">
   <script src="games.js" defer></script>
 </head>
@@ -28,7 +28,21 @@
       <h2 id="ps-games-heading">PlayStation Exclusive Games</h2>
       <div class="carousel-container" id="ps-games">
         <button class="scroll-btn left" onclick="scrollCarousel('ps-games', -1)" aria-label="Scroll left in PlayStation games">&#10094;</button>
-        <div class="carousel"></div>
+        <div class="carousel">
+          <!-- Example Game Card -->
+          <div class="game-card">
+            <img src="ps-game-image.jpg" alt="Game Title" onclick="showDetails('Game Title', 'ps-game-image.jpg', 'Game Description')">
+            <h3>Game Title</h3>
+            <div class="rating">
+              <span class="star" onclick="rateGame('Game Title', 1)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 2)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 3)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 4)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 5)">★</span>
+            </div>
+            <p class="average-rating">Average Rating: 0</p>
+          </div>
+        </div>
         <button class="scroll-btn right" onclick="scrollCarousel('ps-games', 1)" aria-label="Scroll right in PlayStation games">&#10095;</button>
       </div>
     </section>
@@ -38,7 +52,21 @@
       <h2 id="xbox-games-heading">Xbox Exclusive Games</h2>
       <div class="carousel-container" id="xbox-games">
         <button class="scroll-btn left" onclick="scrollCarousel('xbox-games', -1)" aria-label="Scroll left in Xbox games">&#10094;</button>
-        <div class="carousel"></div>
+        <div class="carousel">
+          <!-- Example Game Card -->
+          <div class="game-card">
+            <img src="xbox-game-image.jpg" alt="Game Title" onclick="showDetails('Game Title', 'xbox-game-image.jpg', 'Game Description')">
+            <h3>Game Title</h3>
+            <div class="rating">
+              <span class="star" onclick="rateGame('Game Title', 1)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 2)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 3)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 4)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 5)">★</span>
+            </div>
+            <p class="average-rating">Average Rating: 0</p>
+          </div>
+        </div>
         <button class="scroll-btn right" onclick="scrollCarousel('xbox-games', 1)" aria-label="Scroll right in Xbox games">&#10095;</button>
       </div>
     </section>
@@ -48,7 +76,21 @@
       <h2 id="popular-games-heading">Popular Games</h2>
       <div class="carousel-container" id="popular-games">
         <button class="scroll-btn left" onclick="scrollCarousel('popular-games', -1)" aria-label="Scroll left in popular games">&#10094;</button>
-        <div class="carousel"></div>
+        <div class="carousel">
+          <!-- Example Game Card -->
+          <div class="game-card">
+            <img src="popular-game-image.jpg" alt="Game Title" onclick="showDetails('Game Title', 'popular-game-image.jpg', 'Game Description')">
+            <h3>Game Title</h3>
+            <div class="rating">
+              <span class="star" onclick="rateGame('Game Title', 1)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 2)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 3)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 4)">★</span>
+              <span class="star" onclick="rateGame('Game Title', 5)">★</span>
+            </div>
+            <p class="average-rating">Average Rating: 0</p>
+          </div>
+        </div>
         <button class="scroll-btn right" onclick="scrollCarousel('popular-games', 1)" aria-label="Scroll right in popular games">&#10095;</button>
       </div>
     </section>
@@ -66,7 +108,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Game Rentals | All Rights Reserved</p>
+    <p>&copy; 2025 Gamers Blog by John Phiri | All Rights Reserved</p>
   </footer>
 
   <!-- About Section -->
@@ -78,7 +120,7 @@
   <!-- Contact Section -->
   <section id="contact" aria-labelledby="contact-heading">
     <h2 id="contact-heading">Contact Us</h2>
-    <p>For inquiries, please email us at <a href="mailto:contact@gamersblog.com">contact@gamersblog.com</a>.</p>
+    <p>For inquiries, please email us at <a href="phiri11005@gmail.com">contact@gamersblog.com</a>.</p>
   </section>
 </body>
 </html>
